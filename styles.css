@@ -192,7 +192,7 @@ footer {
 
 /* Optional: Add some styles for the slideshow container */
 .slideshow-container {
-  height: 1000;
+  height: auto;
   max-width: auto; /* Updated: Increase max-width for a larger container */
   position: relative;
   margin: auto;
@@ -201,7 +201,7 @@ footer {
 /* Optional: Add styles for images if needed */
 .mySlides img {
   max-width: 2000px; /* Edited: Ensure images take full width of their container */
-  height: 1000px; /* Edited: Maintain aspect ratio */
+  height: auto; /* Edited: Maintain aspect ratio */
   max-height: 400px; /* Edited: Set maximum height for larger images */
 }
 
