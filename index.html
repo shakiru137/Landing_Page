@@ -9,6 +9,9 @@
   <body>
     <!-- Header -->
     <header>
+      <div id="logo">
+        <a href="./index.html"> <p id="logo">LANDING PAGE</p> </a>
+      </div>
       <nav>
         <ul>
           <li><a href="#intro">Home</a></li>
@@ -20,51 +23,117 @@
 
     <!-- Intro Section -->
     <section id="intro">
-      <img src="cover-image.jpg" alt="Project Cover Image" />
-      <h1>Project Name</h1>
-      <p>One-line description of your project.</p>
-      <a href="deployed-app-url" class="button">View Project</a>
+      <img src="./Images/cover-image.png" alt="Project Cover Image" />
+      <h1>Pure Bank</h1>
+      <p>
+        Flask Banking Application: A simple web application built with Flask and
+        MySQL, allowing users to create accounts, log in, withdraw and deposit
+        money, and send money between accounts. The application demonstrates
+        basic banking functionalities and provides a user-friendly interface for
+        managing accounts.
+      </p>
+      <a href="https://youtu.be/qtPoXgTuAlo" class="button">View Project</a>
     </section>
 
     <!-- Feature Section -->
     <section id="features">
       <h2>Key Features</h2>
       <div class="feature">
-        <img src="feature1.jpg" alt="Feature 1" />
-        <h3>Feature 1</h3>
-        <p>Description of Feature 1.</p>
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <img src="./Images/createAccount.png" alt="Create New Account" />
+          </div>
+
+          <div class="mySlides fade">
+            <img
+              src="./Images/LoginAccount.png"
+              alt="Login to Existing Account"
+            />
+          </div>
+
+          <div class="mySlides fade">
+            <img src="./Images/manageAccount.png" alt="Manage Account" />
+          </div>
+        </div>
+        <h3>Account Management</h3>
+        <p>
+          Users can create new accounts, log in to existing accounts, and manage
+          their account balances. This feature allows users to keep track of
+          their financial transactions and balances in a secure and organized
+          way
+        </p>
       </div>
       <div class="feature">
-        <img src="feature2.jpg" alt="Feature 2" />
-        <h3>Feature 2</h3>
-        <p>Description of Feature 2.</p>
+        <video width="640" height="360" controls>
+          <source src="./DemoVideo/transactionDemo.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <h3>Transaction Capabilities</h3>
+        <p>
+          Users can perform various transactions, including withdrawing money,
+          depositing money, and sending money to other accounts. This feature
+          enables users to manage their finances effectively and transfer funds
+          securely
+        </p>
       </div>
       <div class="feature">
-        <img src="feature3.jpg" alt="Feature 3" />
-        <h3>Feature 3</h3>
-        <p>Description of Feature 3.</p>
+        <div class="slideshow-container">
+          <div class="Slides fade">
+            <img src="./Images/passwdProtected.png" alt="Create New Account" />
+          </div>
+
+          <div class="Slides fade">
+            <img src="./Images/database.png" alt="Login to Existing Account" />
+          </div>
+
+          <div class="Slides fade">
+            <img src="./Images/cover-image.png" alt="Manage Account" />
+          </div>
+        </div>
+        <h3>Secure Authentication</h3>
+        <p>
+          Pure Bank is a robust banking application built with Flask,
+          incorporating comprehensive database management and secure
+          authentication mechanisms. It ensures the security and integrity of
+          users' financial information through rigorous password protection and
+          validation protocols. This ensures that all transactions and account
+          activities are safeguarded against unauthorized access, providing
+          users with peace of mind regarding their financial data.
+        </p>
       </div>
     </section>
 
     <!-- About Section -->
     <section id="about">
       <h2>About</h2>
-      <p>Description of what inspired the project.</p>
+      <p>
+        The inspiration behind developing this Flask banking application stemmed
+        from a desire to create a user-friendly and secure platform for managing
+        financial transactions. Recognizing the importance of accessible banking
+        services, especially in the digital age, I aimed to develop a solution
+        that provides seamless account management, secure transaction
+        capabilities, and robust authentication mechanisms. This project is
+        driven by a commitment to enhancing financial accessibility and security
+        for users, ensuring they have reliable tools to manage their finances
+        effectively.
+      </p>
       <p>
         Portfolio Project for Holberton School.
         <a href="https://www.holbertonschool.com">Holberton School</a>
       </p>
       <ul>
-        <li><a href="linkedin-profile-url">LinkedIn</a></li>
-        <li><a href="github-profile-url">GitHub</a></li>
-        <li><a href="twitter-profile-url">Twitter</a></li>
+        <li><a href="http://linkedin.com/in/yusuf-shakiru-oluwasegun"">LinkedIn</a></li>
+        <li><a href="https://github.com/shakiru137">GitHub</a></li>
+        <li><a href="https://twitter.com/yusufshakiruol2/">Twitter</a></li>
       </ul>
-      <a href="github-repo-url">Project GitHub Repository</a>
+      <a href="https://github.com/shakiru137/Landing_Page"
+        >Project GitHub Repository</a
+      >
     </section>
 
     <!-- Footer -->
     <footer>
-      <p>&copy; 2024 Your Name. All rights reserved.</p>
+      <p>&copy; 2024 Shakiru Oluwasegun Yusuf. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>

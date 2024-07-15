@@ -1,10 +1,16 @@
 /* General Styles */
 body {
+  background-image: url("./Images/website-cover-page.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   color: #333;
-  background-color: #f4f4f4;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 a {
@@ -22,11 +28,16 @@ header {
   background: #077eba;
   padding: 10px 20px;
   color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 header nav ul {
   display: flex;
   justify-content: flex-end;
+  flex-wrap: wrap;
 }
 
 header nav ul li {
@@ -42,23 +53,24 @@ header nav ul li a {
 #intro {
   text-align: center;
   padding: 50px 20px;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.3);
 }
 
 #intro img {
   width: 100%;
-  max-width: 600px;
+  max-width: 1000px;
   height: auto;
 }
 
 #intro h1 {
   font-size: 2.5em;
   margin: 20px 0;
+  color: #077eba;
 }
 
 #intro p {
   font-size: 1.2em;
-  color: #666;
+  color: black;
 }
 
 #intro .button {
@@ -78,13 +90,14 @@ header nav ul li a {
 /* Feature Section Styles */
 #features {
   padding: 50px 20px;
-  background: #f9f9f9;
+  background: rgba(249, 249, 249, 0.3);
 }
 
 #features h2 {
   text-align: center;
   margin-bottom: 40px;
   font-size: 2em;
+  color: #077eba;
 }
 
 .feature {
@@ -103,18 +116,20 @@ header nav ul li a {
 .feature h3 {
   margin-top: 20px;
   font-size: 1.5em;
+  color: #077eba;
 }
 
 .feature p {
+  font-size: 1.2rem;
   text-align: center;
-  color: #666;
+  color: black;
   max-width: 600px;
 }
 
 /* About Section Styles */
 #about {
   padding: 50px 20px;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.3);
 }
 
 #about h2 {
@@ -124,6 +139,7 @@ header nav ul li a {
 }
 
 #about p {
+  font-size: 1.2rem;
   text-align: center;
   color: #666;
   max-width: 800px;
@@ -156,5 +172,73 @@ footer {
   color: #fff;
   text-align: center;
   padding: 20px 0;
-  margin-top: 50px;
+  margin-top: auto;
+}
+
+/* Add animation keyframes */
+@keyframes slide {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Hide all images by default */
+.mySlides {
+  display: none;
+}
+
+/* Optional: Add some styles for the slideshow container */
+.slideshow-container {
+  height: 1000;
+  max-width: auto; /* Updated: Increase max-width for a larger container */
+  position: relative;
+  margin: auto;
+}
+
+/* Optional: Add styles for images if needed */
+.mySlides img {
+  max-width: 2000px; /* Edited: Ensure images take full width of their container */
+  height: 1000px; /* Edited: Maintain aspect ratio */
+  max-height: 400px; /* Edited: Set maximum height for larger images */
+}
+
+/* Optional: Add styles for images if needed */
+.Slides img {
+  max-width: 2000px; /* Edited: Ensure images take full width of their container */
+  height: 1000px; /* Edited: Maintain aspect ratio */
+  max-height: 400px; /* Edited: Set maximum height for larger images */
+}
+
+video {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Import Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+/* Style for the logo */
+#logo {
+  margin: 0;
+  cursor: pointer;
+  transition: transform 0.3s;
+  max-width: 300px; /* Increase max-width for a larger logo */
+  height: auto;
+  transform: scale(1);
+  color: #666; /* Set the color of the logo text */
+  font-size: 2rem; /* Increase font size for bigger text */
+  font-weight: normal; /* Use normal weight for the Lobster font */
+  font-family: "Lobster", cursive; /* Apply Lobster font */
+  text-align: center; /* Center-align the text */
+}
+
+/* Optional: Add hover effect */
+#logo:hover {
+  transform: scale(1.1); /* Slightly enlarge the logo on hover */
 }
