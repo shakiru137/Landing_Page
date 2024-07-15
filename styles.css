@@ -1,0 +1,160 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+a {
+  text-decoration: none;
+  color: #077eba;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Header Styles */
+header {
+  background: #077eba;
+  padding: 10px 20px;
+  color: #fff;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+header nav ul li {
+  margin-left: 20px;
+}
+
+header nav ul li a {
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Intro Section Styles */
+#intro {
+  text-align: center;
+  padding: 50px 20px;
+  background: #fff;
+}
+
+#intro img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
+
+#intro h1 {
+  font-size: 2.5em;
+  margin: 20px 0;
+}
+
+#intro p {
+  font-size: 1.2em;
+  color: #666;
+}
+
+#intro .button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #29a6e6;
+  color: #fff;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+#intro .button:hover {
+  background: #077eba;
+}
+
+/* Feature Section Styles */
+#features {
+  padding: 50px 20px;
+  background: #f9f9f9;
+}
+
+#features h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2em;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.feature img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+.feature h3 {
+  margin-top: 20px;
+  font-size: 1.5em;
+}
+
+.feature p {
+  text-align: center;
+  color: #666;
+  max-width: 600px;
+}
+
+/* About Section Styles */
+#about {
+  padding: 50px 20px;
+  background: #fff;
+}
+
+#about h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2em;
+}
+
+#about p {
+  text-align: center;
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#about ul {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#about ul li {
+  margin: 0 10px;
+}
+
+#about ul li a {
+  font-size: 1.2em;
+  color: #29a6e6;
+  transition: color 0.3s;
+}
+
+#about ul li a:hover {
+  color: #077eba;
+}
+
+/* Footer Styles */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 50px;
+}
