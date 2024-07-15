@@ -244,3 +244,10 @@ video {
 #logo:hover {
   transform: scale(1.1); /* Slightly enlarge the logo on hover */
 }
+
+video {
+  width: 100%;
+  max-width: 640px;
+  height: auto;
+  transition: transform 0.5s ease-in-out;
+}
