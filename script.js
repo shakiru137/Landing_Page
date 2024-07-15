@@ -87,11 +87,3 @@ document.addEventListener("DOMContentLoaded", function () {
     setTimeout(showSlides, 4000); // Change image every 4 seconds
   }
 });
-
-// function rotateVideo() {
-//   const video = document.getElementById("intro-video");
-//   video.style.transform = "rotate(180deg)";
-// }
-
-// // Call the function to rotate the video
-// rotateVideo();
