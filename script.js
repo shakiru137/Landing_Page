@@ -87,3 +87,30 @@ document.addEventListener("DOMContentLoaded", function () {
     setTimeout(showSlides, 4000); // Change image every 4 seconds
   }
 });
+
+document.getElementById("play-button").addEventListener("click", function () {
+  const video = document.getElementById("intro-video");
+  this.style.display = "none"; // Hide the play button
+  video.style.display = "block"; // Show the video
+  video.play(); // Start playing the video
+});
+
+// Example: Smooth scroll for navigation links
+document.addEventListener("DOMContentLoaded", function () {
+  const links = document.querySelectorAll("section h3 a");
+
+  for (const link of links) {
+    link.addEventListener("click", smoothScroll);
+  }
+
+  function smoothScroll(event) {
+    event.preventDefault();
+    const targetId = this.getAttribute("href").substring(1);
+    const targetSection = document.getElementById(targetId);
+
+    window.scrollTo({
+      top: targetSection.offsetTop,
+      behavior: "smooth",
+    });
+  }
+});

@@ -11,6 +11,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 a {
@@ -215,11 +216,13 @@ footer {
 }
 
 video {
+  border: #077eba solid;
   width: 100%;
   max-width: 800px;
   height: auto;
   display: block;
   margin: 0 auto;
+  transition: transform 0.5s ease-in-out;
 }
 
 /* Import Google Font */
@@ -245,9 +248,34 @@ video {
   transform: scale(1.1); /* Slightly enlarge the logo on hover */
 }
 
-video {
+/* Style for the intro video play and button */
+.video-container {
+  justify-content: center;
+  position: relative;
+  width: 20%;
+  max-width: 640px;
+  margin: 0 auto;
+}
+.video-container video {
+  width: 100%;
+  display: none; /* Hide the video initially */
+}
+.play-button {
   width: 100%;
   max-width: 640px;
-  height: auto;
+  height: 560px;
+  background: url("./Images/blue-play-button.png") center center no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+
+#go_up {
+  float: right;
+  position: relative;
+  bottom: 20px;
+  right: 20px;
+  font-size: 30px;
+  color: #077eba;
+  cursor: pointer;
   transition: transform 0.5s ease-in-out;
 }

@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Project</title>
+    <link rel="icon" href="./Images/landing-page.png" type="image/png" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <!-- Header -->
-    <header>
+    <header id="up">
       <div id="logo">
         <a href="./index.html"> <p id="logo">LANDING PAGE</p> </a>
       </div>
@@ -103,11 +104,15 @@
         </p>
 
         <br><br><br><br><br><br><br><br><br><br><br><br>
-      <h3>Project Introduction Video</h3>
-      <video id="intro-video" width="640" height="360" controls>
-        <source src="./DemoVideo/intro.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+        <h3>Project Introduction Video</h3>
+        <h3>&darr; &darr; &darr;</h3>
+        <div class="video-container">
+          <div class="play-button" id="play-button"></div>
+          <video id="intro-video" controls>
+            <source src="./DemoVideo/intro.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
     </div>
     </section>
 
@@ -137,6 +142,7 @@
       <a href="https://github.com/shakiru137/Landing_Page"
         >Project GitHub Repository</a
       >
+      <h3 id="go_up"><a href="#up">Go up &uarr;</a></h3>
     </section>
 
     <!-- Footer -->

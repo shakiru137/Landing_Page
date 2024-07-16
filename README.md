@@ -10,7 +10,6 @@ Welcome to the Pure Bank Landing Page! This project serves as the landing page f
 - [Setup](#setup)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [License](#license)
 - [Contact](#contact)
 
 ## Introduction
@@ -31,7 +30,7 @@ The landing page includes the following sections:
 
 2. **Feature Section**
 
-   - Three key features highlighted with images, names, and descriptions
+   - Three key features highlighted with images/Videos, names, and descriptions
 
 3. **About Section**
    - A personal story describing the inspiration behind the project
@@ -90,10 +89,6 @@ Contributions are welcome! Please follow these steps to contribute:
    git push origin feature/your-feature-name
    ```
 5. Open a pull request on GitHub.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Contact
 
