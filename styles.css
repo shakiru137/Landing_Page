@@ -279,3 +279,17 @@ video {
   cursor: pointer;
   transition: transform 0.5s ease-in-out;
 }
+
+hr {
+  border: 0;
+  height: 2px; /* Adjust the height as needed */
+  background-color: rgba(
+    128,
+    128,
+    128,
+    0.5
+  ); /* Grey color with 50% transparency */
+  margin: 20px 0; /* Remove margins */
+  padding: 0; /* Remove padding */
+  width: 100%; /* Ensure it spans the full width of the container */
+}
